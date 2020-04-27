@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block post %}
+		<h1>Dashboard</h1>
+		<p>Welcome to dashboard.</p>
+        <div>
+             <form action="." method="post">
+            {{ form. }}
+            {% csrf_token %}
+            <p><input type="submit" value="publish"></p>
+          </form>
+        </div>
+{% endblock	%}
